@@ -137,7 +137,7 @@ class App extends Component {
                   <Message info size="small">
                     <a href="/images.zip">Download images (3.9MB)</a>
                   </Message>
-                  <Image src="/IconR.png" size="small"/>
+                  <Image src="/Icon512.png" size="small"/>
                 </p>
 
                 <Header as="h3" size="medium">
