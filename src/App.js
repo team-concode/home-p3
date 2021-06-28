@@ -95,6 +95,9 @@ class App extends Component {
                   Videos
                 </Header>
                 <p>
+                  <Message info size="small">
+                    <a href="/video.mov.zip">Download video (52.6MB)</a>
+                  </Message>
                   <Embed
                       id='g2HB0Hr3B70'
                       placeholder='/Video.png'
@@ -105,6 +108,9 @@ class App extends Component {
                 <Header as="h3" size="medium">
                   Images
                 </Header>
+                <Message info size="small">
+                  <a href="/screenshots.zip">Download screenshots (7.3MB)</a>
+                </Message>
                 <Image.Group size='medium'>
                   <Image src='/screenshots/1.png' />
                   <Image src='/screenshots/2.png' />
