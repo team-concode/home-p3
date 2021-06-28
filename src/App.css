@@ -18,7 +18,12 @@ body {
 }
 
 .ui.basic.segment > .ui.huge.header {
-    font-size: 54px;
+    font-size: 3em;
+}
+
+.ui.secondary.segment.footer {
+    margin-top:5em;
+    border:none;
 }
 
 .eleven.wide.column {
@@ -82,6 +87,14 @@ blockquote cite:after {
     content: "»";
 }
 
-#h1 {
-    font-size: 3em;
+li {
+    line-height: 160%;
+}
+
+h3.ui.header {
+    margin-top:2.5em;
+}
+
+.ui.small.header .sub.header {
+    font-size: 0.8em;
 }
