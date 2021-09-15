@@ -134,18 +134,24 @@ class App extends Component {
                   Icon, Logo and Illustration
                 </Header>
                 <p>
-                  <Message info size="small">
-                    <a href="/images.zip">Download images (3.9MB)</a>
-                  </Message>
                   <Image src="/Icon512.png" size="small"/>
+                  <Message info size="small">
+                    <a href="/images.zip">Download logo (4MB)</a>
+                  </Message>
                 </p>
 
                 <Header as="h3" size="medium">
                   About CONCODE
                 </Header>
                 <p>
-                  CONCODE는 현재 프로그래머 출신의 1인 팀입니다. 
+                  CONCODE는 현재 13년차 프로그래머 출신의 1인 개발 홈 스튜디오 입니다.
                   기존의 게임의 문법과는 다른 레트로 감성의 게임을 만듭니다.
+                </p>
+                <p>
+                  <Image src="/concode_w.png" size="small"/>
+                  <Message info size="small">
+                    <a href="/concode.zip">Download BI (0.1MB)</a>
+                  </Message>
                 </p>
 
                 <Header as="h3" size="medium">
