@@ -14,6 +14,7 @@ import {
 } from "semantic-ui-react";
 
 import "./App.css";
+import sbService from "./Services/StringBundleService";
 
 class App extends Component {
   render() {
@@ -44,7 +45,7 @@ class App extends Component {
                   <Header as="h4">
                     <Header.Content>Platforms:</Header.Content>
                     <Header.Subheader>
-                      Mobile
+                      <a href="https://play.google.com/store/apps/details?id=io.concode.p3">Android</a>, iOS
                     </Header.Subheader>
                   </Header>
 
@@ -63,10 +64,7 @@ class App extends Component {
                 </Header>
                 <Divider hidden />
                 <p>
-                  로그라이크 던전 크롤러 장르의 게임입니다. 
-                  이상한 동굴이 하나 있는 섬에 갇힌 케빈과 치즈가 집으로 돌아가기 위해 고군분투 하는 이야기 입니다. 
-                  매번 새롭게 생성되는 던전에서 적을 물리치고 자원을 수집하고 건물을 건설하세요. 
-                  픽셀 아트의 아기자기함과 함께 다이나믹한 전투를 함께 즐길 수 있습니다.
+                  {sbService.get('desc')}
                 </p>
 
 
@@ -74,9 +72,7 @@ class App extends Component {
                   History
                 </Header>
                 <p>
-                  The Way Home은 2021년 2월 부터 개발자의 반려묘를 주인공삼아 개발되기 시작했습니다. 
-                  자본을 비롯한 모든것들 부터 완전하게 독립해서 온전히 개발자가 만들고 싶은 게임에 집중하고있습니다.
-                  현재 개발중으로 2021년 말에 출시를 목표로 합니다.
+                  {sbService.get('history')}
                 </p>
 
 
@@ -84,11 +80,18 @@ class App extends Component {
                   Features
                 </Header>
                 <ul>
-                  <li>사람이 생성한 것 같은 맵이 알고리즘에 의해 자동 생성됩니다. 매 전투를 새로운 패턴으로 즐길 수 있습니다.</li>
-                  <li>매 전투시마다 다른 15종 이상의 스킬들을 전략적으로 조합해서 전투를 진행합니다.</li>
-                  <li>던전에서 수집한 자원들로 필요한 건물들을 건설 하고 마을을 꾸밀 수 있습니다.</li>
-                  <li>픽셀아트의 따듯한 감성과 함께 빛과 그림자가 살아있는 조명효과로 현장감을 느낄 수 있습니다.</li>
-                  <li>반전이 있는 매력적인 스토리를 따라가며 탐험을 계속합니다.</li>
+                  <li>{sbService.get('feature1')}</li>
+                  <li>{sbService.get('feature2')}</li>
+                  <li>{sbService.get('feature3')}</li>
+                  <li>{sbService.get('feature4')}</li>
+                  <li>{sbService.get('feature5')}</li>
+                </ul>
+
+                <Header as="h3" size="medium">
+                  Awards
+                </Header>
+                <ul>
+                  <li><a href="https://events.withgoogle.com/indie-games-festival-korea-2021/2021-top-3-users-choice/">Google Indie Game Festival Korea 2021 Top3</a></li>
                 </ul>
 
                 <Header as="h3" size="medium">
@@ -144,13 +147,12 @@ class App extends Component {
                   About CONCODE
                 </Header>
                 <p>
-                  CONCODE는 현재 13년차 프로그래머 출신의 1인 개발 홈 스튜디오 입니다.
-                  기존의 게임의 문법과는 다른 레트로 감성의 게임을 만듭니다.
+                  {sbService.get('about')}
                 </p>
                 <p>
                   <Image src="/concode_w.png" size="small"/>
                   <Message info size="small">
-                    <a href="/concode.zip">Download BI (0.1MB)</a>
+                    <a href="/concode.zip">Download CI (0.1MB)</a>
                   </Message>
                 </p>
 
@@ -191,6 +193,9 @@ class App extends Component {
               <p>
                 Copyright{" "}
                 <a href="https://concode.co">@CONCODE</a>
+              </p>
+              <p>
+                <a href="" onClick={()=>sbService.changeLang("ko")}>KO</a> | <a href="" onClick={()=>sbService.changeLang("en")}>EN</a>
               </p>
             </Container>
           </Segment>
