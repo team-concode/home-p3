@@ -38,21 +38,15 @@ class App extends Component {
                   <Header as="h4">
                     <Header.Content>Release Date:</Header.Content>
                     <Header.Subheader>
-                      2021
+                      2021. 12
                     </Header.Subheader>
                   </Header>
 
                   <Header as="h4">
                     <Header.Content>Platforms:</Header.Content>
                     <Header.Subheader>
-                      <a href="https://play.google.com/store/apps/details?id=io.concode.p3">Android</a>, iOS
-                    </Header.Subheader>
-                  </Header>
-
-                  <Header as="h4">
-                    <Header.Content>Regular Price:</Header.Content>
-                    <Header.Subheader>
-                      To be decided
+                      <a href="https://play.google.com/store/apps/details?id=io.concode.p3">Android</a><br/>
+                      <a href="https://apps.apple.com/app/id1590763682">iOS</a>
                     </Header.Subheader>
                   </Header>
 
@@ -99,10 +93,10 @@ class App extends Component {
                 </Header>
                 <p>
                   <Message info size="small">
-                    <a href="/video.mov.zip">Download video (52.6MB)</a>
+                    <a href="/video.m4v.zip">Download video (52.6MB)</a>
                   </Message>
                   <Embed
-                      id='g2HB0Hr3B70'
+                      id='fJBEQtH2QDA'
                       placeholder='/Video.png'
                       source='youtube'
                   />
@@ -121,16 +115,6 @@ class App extends Component {
                   <Image src='/screenshots/4.png' />
                   <Image src='/screenshots/5.png' />
                   <Image src='/screenshots/6.png' />
-                  <Image src='/screenshots/7.png' />
-                  <Image src='/screenshots/8.png' />
-                  <Image src='/screenshots/9.png' />
-                  <Image src='/screenshots/10.png' />
-                  <Image src='/screenshots/11.png' />
-                  <Image src='/screenshots/12.png' />
-                  <Image src='/screenshots/13.png' />
-                  <Image src='/screenshots/14.png' />
-                  <Image src='/screenshots/15.png' />
-                  <Image src='/screenshots/16.png' />
                 </Image.Group>
 
                 <Header as="h3" size="medium">
