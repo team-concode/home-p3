@@ -46,7 +46,8 @@ class App extends Component {
                     <Header.Content>Platforms:</Header.Content>
                     <Header.Subheader>
                       <a href="https://play.google.com/store/apps/details?id=io.concode.p3">Android</a><br/>
-                      <a href="https://apps.apple.com/app/id1590763682">iOS</a>
+                      <a href="https://apps.apple.com/app/id1590763682">iOS</a><br/>
+                      <a href="https://store.steampowered.com/app/2061300/The_Way_Home_Pixel_Roguelike">Steam</a>
                     </Header.Subheader>
                   </Header>
 
@@ -92,11 +93,8 @@ class App extends Component {
                   Videos
                 </Header>
                 <p>
-                  <Message info size="small">
-                    <a href="/video.m4v.zip">Download video (52.6MB)</a>
-                  </Message>
                   <Embed
-                      id='fJBEQtH2QDA'
+                      id='1RXKmj-Nawc'
                       placeholder='/Video.png'
                       source='youtube'
                   />
@@ -127,12 +125,6 @@ class App extends Component {
                   </Message>
                 </p>
 
-                <Header as="h3" size="medium">
-                  About CONCODE
-                </Header>
-                <p>
-                  {sbService.get('about')}
-                </p>
                 <p>
                   <Image src="/concode_w.png" size="small"/>
                   <Message info size="small">
